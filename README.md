@@ -1,5 +1,5 @@
 # pitching_dash
-##Dashboard to evaluate pitchers
+## Dashboard to evaluate pitchers
 
 In order to run the file, you must have the following files in the same folder:
 * ibp_dash.py
