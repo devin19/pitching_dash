@@ -184,6 +184,10 @@ if pitcher_option == 'Pitcher 1':
             if st.checkbox('P1 Location Before Break (R)'):
                 righties_p1b = pd.DataFrame(pitcher1b.query('bats=="R"'))
                 
+                righties_p1b_count = righties_p1b.pitch_type.value_counts()
+                
+                righties_p1b_count
+                
                 location_chart1rb = righties_p1b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 righties_p1b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1rb, color='blue', label='Changeup')
                 righties_p1b.query('pitch_type=="CT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1rb, color='purple', label='Cutter')
@@ -203,6 +207,10 @@ if pitcher_option == 'Pitcher 1':
                 
             if st.checkbox('P1 Location After Break (R)'):
                 righties_p1a = pd.DataFrame(pitcher1a.query('bats=="R"'))
+                
+                righties_p1a_count = righties_p1a.pitch_type.value_counts()
+                
+                righties_p1a_count
                 
                 location_chart1ra = righties_p1a.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 righties_p1a.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1ra, color='blue', label='Changeup')
@@ -226,6 +234,10 @@ if pitcher_option == 'Pitcher 1':
             if st.checkbox('P1 Location Before Break (L)'):
                 lefties_p1b = pd.DataFrame(pitcher1b.query('bats=="L"'))
                 
+                lefties_p1b_count = lefties_p1b.pitch_type.value_counts()
+                
+                lefties_p1b_count
+                
                 location_chart1lb = lefties_p1b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p1b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1lb, color='blue', label='Changeup')
                 lefties_p1b.query('pitch_type=="CT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1lb, color='purple', label='Cutter')
@@ -243,6 +255,10 @@ if pitcher_option == 'Pitcher 1':
                 
             if st.checkbox('P1 Location After Break (L)'):
                 lefties_p1a = pd.DataFrame(pitcher1a.query('bats=="L"'))
+                
+                lefties_p1a_count = lefties_p1a.pitch_type.value_counts()
+                
+                lefties_p1a_count
                 
                 location_chart1la = lefties_p1a.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p1a.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart1la, color='blue', label='Changeup')
@@ -419,6 +435,10 @@ if pitcher_option == 'Pitcher 2':
             if st.checkbox('P2 Location Before Break (R)'):
                 righties_p2b = pd.DataFrame(pitcher2b.query('bats=="R"'))
                 
+                righties_p2b_count = righties_p2b.pitch_type.value_counts()
+                
+                righties_p2b_count
+                
                 location_chart2rb = righties_p2b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 righties_p2b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2rb, color='blue', label='Changeup')
                 righties_p2b.query('pitch_type=="FT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2rb, color='purple', label='Two-Seam Fastball')
@@ -438,6 +458,10 @@ if pitcher_option == 'Pitcher 2':
                 
             if st.checkbox('P2 Location After Break (R)'):
                 righties_p2a = pd.DataFrame(pitcher2a.query('bats=="R"'))
+                
+                righties_p2a_count = righties_p2a.pitch_type.value_counts()
+                
+                righties_p2a_count
                 
                 location_chart2ra = righties_p2a.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 righties_p2a.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2ra, color='blue', label='Changeup')
@@ -461,6 +485,10 @@ if pitcher_option == 'Pitcher 2':
             if st.checkbox('P2 Location Before Break (L)'):
                 lefties_p2b = pd.DataFrame(pitcher2b.query('bats=="L"'))
                 
+                lefties_p2b_count = lefties_p2b.pitch_type.value_counts()
+                
+                lefties_p2b_count
+                
                 location_chart2lb = lefties_p2b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p2b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2lb, color='blue', label='Changeup')
                 lefties_p2b.query('pitch_type=="FT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2lb, color='purple', label='Two-Seam Fastball')
@@ -478,6 +506,10 @@ if pitcher_option == 'Pitcher 2':
                 
             if st.checkbox('P2 Location After Break (L)'):
                 lefties_p2a = pd.DataFrame(pitcher2a.query('bats=="L"'))
+                
+                lefties_p2a_count = lefties_p2a.pitch_type.value_counts()
+                
+                lefties_p2a_count
                 
                 location_chart2la = lefties_p2a.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p2a.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart2la, color='blue', label='Changeup')
@@ -660,6 +692,10 @@ if pitcher_option == 'Pitcher 3':
             if st.checkbox('P3 Location Before Break (R)'):
                 righties_p3b = pd.DataFrame(pitcher3b.query('bats=="R"'))
                 
+                righties_p3b_count = righties_p3b.pitch_type.value_counts()
+                
+                righties_p3b_count
+                
                 location_chart3rb = righties_p3b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 righties_p3b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart3rb, color='blue', label='Changeup')
                 righties_p3b.query('pitch_type=="FT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart3rb, color='purple', label='Two-Seam Fastball')
@@ -704,6 +740,10 @@ if pitcher_option == 'Pitcher 3':
             if st.checkbox('P3 Location Before Break (L)'):
                 lefties_p3b = pd.DataFrame(pitcher3b.query('bats=="L"'))
                 
+                lefties_p3b_count = lefties_p3b.pitch_type.value_counts()
+                
+                lefties_p3b_count
+                
                 location_chart3lb = lefties_p3b.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p3b.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart3lb, color='blue', label='Changeup')
                 lefties_p3b.query('pitch_type=="FT"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart3lb, color='purple', label='Two-Seam Fastball')
@@ -721,6 +761,10 @@ if pitcher_option == 'Pitcher 3':
                 
             if st.checkbox('P3 Location After Break (L)'):
                 lefties_p3a = pd.DataFrame(pitcher3a.query('bats=="L"'))
+                
+                lefties_p3a_count = lefties_p3a.pitch_type.value_counts()
+                
+                lefties_p3a_count
                 
                 location_chart3la = lefties_p3a.query('pitch_type=="FF"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), color='red', label='Fastball')
                 lefties_p3a.query('pitch_type=="CH"').plot(kind='scatter', x='x', y = 'z', xlim=(-40,35), ylim=(-20,75), ax=location_chart3la, color='blue', label='Changeup')
