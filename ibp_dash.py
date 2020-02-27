@@ -13,7 +13,6 @@ from sklearn import cluster, datasets, mixture
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 plt.style.use('fivethirtyeight')
-from PIL import Image
 
 # Title for Dashboard
 phillies = 'phillies_logo.png'
