@@ -266,7 +266,6 @@ if pitcher_option == 'Pitcher 1':
         if st.checkbox('P1 Catchers Before Break'):
             p1b_catchers = pitcher1b.catcherid.value_counts()
             p1b_catcher_pie = p1b_catchers.plot(kind='pie', colors=['red', 'blue'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p1b_catchers.rename('pitches_caught')
             p1b_catchers
             
             st.pyplot()
@@ -274,7 +273,6 @@ if pitcher_option == 'Pitcher 1':
         if st.checkbox('P1 Catchers After Break'):
             p1a_catchers = pitcher1a.catcherid.value_counts()
             p1a_catcher_pie = p1a_catchers.plot(kind='pie', colors=['red', 'blue'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p1a_catchers.rename(columns = {'catcherid':'pitches_caught'})
             p1a_catchers
         
             st.pyplot()
@@ -503,7 +501,6 @@ if pitcher_option == 'Pitcher 2':
         if st.checkbox('P2 Catchers Before Break'):
             p2b_catchers = pitcher2b.catcherid.value_counts()
             p2b_catcher_pie = p2b_catchers.plot(kind='pie', colors=['red', 'blue', 'purple'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p2b_catchers.rename(columns = {'0':'pitches_caught'}, inplace = True)
             p2b_catchers
             
             st.pyplot()
@@ -511,7 +508,6 @@ if pitcher_option == 'Pitcher 2':
         if st.checkbox('P2 Catchers After Break'):
             p2a_catchers = pitcher2a.catcherid.value_counts()
             p2a_catcher_pie = p2a_catchers.plot(kind='pie', colors=['yellow', 'red'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p2a_catchers.rename(columns = {'0':'pitches_caught'}, inplace = True)
             p2a_catchers
         
             st.pyplot()
@@ -748,7 +744,6 @@ if pitcher_option == 'Pitcher 3':
         if st.checkbox('P3 Catchers Before Break'):
             p3b_catchers = pitcher3b.catcherid.value_counts()
             p3b_catcher_pie = p3b_catchers.plot(kind='pie', colors=['red', 'blue', 'purple', 'yellow'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p3b_catchers.rename(columns = {'0':'pitches_caught'}, inplace = True)
             p3b_catchers
             
             st.pyplot()
@@ -756,7 +751,6 @@ if pitcher_option == 'Pitcher 3':
         if st.checkbox('P3 Catchers After Break'):
             p3a_catchers = pitcher3a.catcherid.value_counts()
             p3a_catcher_pie = p3a_catchers.plot(kind='pie', colors=['red', 'blue'], autopct='%.2f', fontsize=19, figsize=(7, 7))
-            p3a_catchers.rename(columns = {'0':'pitches_caught'}, inplace = True)
             p3a_catchers
         
             st.pyplot()
@@ -777,5 +771,3 @@ if pitcher_option == 'Pitcher 3':
             
             p3_catcher_framing = p3_catchers.iloc[3].plot(kind='pie', colors=['red', 'blue'], autopct='%.2f', fontsize=19, figsize=(7, 7), subplots=True)
             st.pyplot()
-            
-# Balls/Strikes Before and After Break
