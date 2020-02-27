@@ -7,19 +7,19 @@ In order to run the file, you must have the following files in the same folder:
 * phillies_logo.png
 
 ### Streamlit Installation
-Once all files are located in the same folder, open your terminal and run the following command:
+Once all files are located in the same folder, open your terminal and run the following command:\
 `pip install streamlit`
 
-If you encounter an error at this step, try the following command:
+If you encounter an error at this step, try the following command:\
 `conda install -c conda-forge watchdog`
 
-Then:
+Then:\
 `pip install streamlit`
 
 ### Running the Dashboard
 Once streamlit has been installed, make sure that you are operating your terminal in the directory that contains the folder with the files for the Dashboard.
 
-Once you have the directory (cd) with the folder open, run the following command:
+Once you have the directory (cd) with the folder open, run the following command:\
 `streamlit run ibp_dash.py`
 
 Streamlit should then run the dashboard in your default browser using a local server.
